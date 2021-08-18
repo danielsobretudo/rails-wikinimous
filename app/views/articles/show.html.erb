@@ -1,6 +1,7 @@
 <h2><%= @article.title %></h2>
 <p><%= @article.content %></p>
-<%= link_to "Delete quote",
+<p><%= link_to "Delete this item",
             article_path(@article),
             method: :delete,
-            data: { confirm: "Are you sure?"} %>
+            data: { confirm: "Are you sure?"} %></p>
+<p><%= link_to "Back to main list", articles_path %></p>
